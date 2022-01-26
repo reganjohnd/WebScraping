@@ -4,15 +4,12 @@ library(httr)
 library(rvest)
 
 ### import search Terms and prep the data
-setwd('G:\\My Drive\\DANIELS ECOSYSTEM\\extracurricularActivities\\DataScience\\Projects\\MakroShareOfSearch\\')
+### I have omitted my folder structure for privacy reasons
 searchTerms <- read.csv('makroKeywords.csv', header = TRUE)
 searchTerms <- unlist(searchTerms[,1])
 searchTerms <- gsub('\\,', '', searchTerms)
 
-### makro Page variable - number of products that appear on the page by default
-productsPerPage <- 20
-
-### Function
+### Function that scrapes the data
 sosScrape <- function(st, productsPerPage, onlyScrapeFirstPage){
   
    ### Get how many pages of results exist
