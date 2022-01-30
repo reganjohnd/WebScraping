@@ -1,5 +1,5 @@
 # WebScraping_ShareOfSearch
-Input search terms (from .csv file) into search on Makro.co.za website. Scrape the products that come up and the order in which they come up.
+Input search terms (from .csv file) into search on online retailer website. Scrape the products that come up and the order in which they come up.
 
 **Potential vulnerabilities**
 Any external information used in web scraping is subject to change
